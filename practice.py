@@ -99,8 +99,118 @@
 # python.add("누리아리")
 # print(python)
 
-#자료구조의 변경
-#커피숍
-menu={"아아","아포카토","바닐라아이스크림"}
-print(menu,type(menu))
+# #자료구조의 변경
+# #커피숍
+# menu={"아아","아포카토","바닐라아이스크림"}
+# print(menu,type(menu))
+
+#분기
+# weather=input("오늘 날씨는어때요?")
+# if weather=="비"or weather=="눈":
+#       print("우산을 챙기세요")
+# elif weather=="미세먼지":
+#     print("마스크를 챙기세요")
+# else:
+#     print("준비물 필요없어요")
+# temp=int(input("기온은 어때요?"))
+# if 30<=temp:
+#     print("너무더워요. 나가지마세요")
+# elif 10<=temp and temp <30:
+#     print("시원해용")
+
+#for
+# print("대기번호:1")
+# print("대기번호:2")
+# print("대기번호:3")
+# print("대기번호:4")
+
+# for waiting_no in [0,1,2,3,4,]:
+#     print("대기번호:{0}".format(waiting_no))
+# for waiting_no in range(2000]:
+#     print("대기번호:{0}".format(waiting_no))
+
+# #while
+# customer = "한영"
+# index = 5
+# while index >= 1:
+#     print("{0},커피가 준비 되었습니다.{1}번 남았어요".format(customer,index))p
+#     index -=1
+#     if index ==0:
+#         print("커피는 페기처분 되었습니다.")
+
+# customer = "토르"
+# person = "unkown"
+
+# while person!= customer:
+#      print("{0},커피가 준비되었습니다.".format(customer))
+#      person=input("이름이 어떻게 되세요?")
+
+# countiue 와 break
+# absent = [2,5]
+# for student in range(1, 11):
+#      if student in absent:
+#          continue
+#     print("{0}, 책을 읽어봐".format(student))
+
+#출석번호가 1,2,3,4, 앞에 100을 붙이기로 ->101,102,103,104
+# students=[1,2,3,4,5]
+# print(students)
+# students=[i+100 for i in students]
+# print(students)
+
+# #학생이름을 대문자로 변환
+# students = ["iron man","hyebinseo"]
+# students = [i.upper()for i in students]
+# print(students)
+
+#퀴즈
+# from random import *
+# cnt = 0 
+# for i in range(1,51):
+#     time = randrange(5,51)#5~50분
+#     if 5<= time <=15:
+#         print("[0] {0}번째 손님 (소요시간:{1}분)" .format(i,time))
+
+# #함수
+# def open_account():
+#     print("새로운 계좌가 생성되었습니다.")
+
+# open_account()
+
+# #반환값을 받는 함수#입금
+# def deposit(balance,money):
+#     print("입금이 완료되었습니다. 잔액은 {0}원입니다.".format(balance+money))
+#     return balance + money
+
+#기본값
+
+# def profile(name, age, main_lang):
+#     print("이름:{0}\t나이:{1}\주 사용언어:{2}"\
+#         .format(name,age,main_lang))
+
+# profile("서혜빈",24,"파이썬")
+# profile("김한영",26,"씨언어")
+
+#키워드값
+# def profile(name,age,main_lang):
+#     print(name,age,main_lang)
+
+# profile(name="유재석"main_lang="파이썬"age=20)
+
+#가변인자 *language> 내가 출력하고 싶은 만큼 할 수 있음. 
+#서로 다른 갯수를 나타내고 싶을때
+
+#지역변수와 전역변수 
+#지역변수- 함수 호출이 될때 만들어졌다가 끝나면 없어지는 것
+
+# gun= 10
+
+# def checkpoint(soldiers):#경계근무
+#     gun = 20 
+#     gun= gun - soldiers
+#     print("[함수 내] 남은 총: {0}".format(gun))
+
+# print("전체 총 : {0}".format(gun))
+# checkpoint(2)
+# print("남은 총": {0}".format(gun))
 
