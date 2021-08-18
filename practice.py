@@ -214,3 +214,102 @@
 # checkpoint(2)
 # print("남은 총": {0}".format(gun))
 
+# 표준 입출력
+# print("python", "java","javascript", sep=" vs "  )
+# print("무엇이 더 재밌을까요?")
+
+# scores = {"수학":0, "영어":50, "코딩":100}
+# for subject, score in scores.items():
+#     print(subject.ljust(8),score)
+
+# for num in range(1,21):
+#     print("대기번호 : "+ str(num).zfill(3))
+
+# print("{0: >+10}".format(500))
+#3자리 마다 콤마를 찍어주기, 부호도 붙이고, 자릿수 확보하기, 돈이 많으면 좋으니까 빈 자리는 ^로 채워주기
+# print("{0:^<+30,}".format(100000000000000))
+# #소수점 출력
+# print("{0:.7f}".format(5/4))
+
+# score_file = open("score.txt","w",encoding="utf8")
+# print("수학 : 0",file=score_file)
+# score_file.close()
+# #파일이 오픈이 됨 
+
+# score_file = open("score.txt","r",encoding="utf8")
+# print(score_file.read())
+# score_file.close()
+#파일이 출력이 됨
+
+#pickle
+# import pickle
+# profile_file =open("profile.pickle","wb")
+# profile = {"이름":"박명수", "나이":30, "취미":["축구", "골프", "십자수"]}
+# print(profile)
+# pickle.dump(profile,profile_file)
+# profile_file.close()
+
+# with open("study.txt", "r" , encoding="utf8")as study_file:
+#     study_file.write("파이썬을 열심히 공부하고 있어요")
+
+# try:
+#     print("나누기 전용 계산기 입니다")
+#     num= (int(input("첫번째 숫자를 입력하세요: ")))
+#     num= (int(input("두번째 숫자를 입력하세요: ")))
+#     print("{0}/{1}={2}".format(num1,num2,int(num1/num2)))
+# except ValueError:
+#     print("에러! 잘못된 값을 입력하엿습니다.")
+    #혹은 bignumber error 등으로 사용자가 정의하는 error안내 문구를 통해
+    #무엇을 잘못 해서 오류가 나왔는지 알 수 있음. 
+
+    #모듈
+    # 자동차가 고장이 났을때 범퍼만 파손이 났다> 부품만 교체하거나 수리
+    #일반가격
+# def price(people):
+#     print "{0}명 가격은 {1}원 입니다.".format(people,people*10000)
+# import travel.thailand
+# trip_to= travel.thailand.ThailandPackage()
+# trip_to.detail()
+
+# from travel.thailand import Thailandpackage
+# trip_to = Thailandpackage()
+# trip_to.detail()
+#input : 사용자 입력을 받는 함수
+# language = input("무슨 연어를 좋아하세요?")
+# print("{0}은 아주 좋은 연어입니다!".format(language))
+#dir : 어떤 객체를 넘겨줬을 때 그 객체가 어떤 변수와 함수를 가지고 있는지 표시
+# print(dir())
+# import random
+# print(dir())
+# import pickle
+# print(dir())
+
+# print(dir(random))
+#파이썬 함수 한국어 라고 하면 바로 함수를 가져와서 쓸 수 있음
+#list of phython modules
+
+#os : 운영 체제에서 제공하는 기본기능
+# import os
+# print(os.getcwd()) #현재 디렉토리
+
+# folder = "sample_dir"
+
+# if os.path .exists(folder)
+#     print("이미 존재하는 폴더입니다.")
+# else:
+#     os.makedirs(folder)
+#     print(folder,"폴더를 생성하였습니다.")
+
+# import datetime
+# print("오늘 날짜는" , datetime.date.today())
+
+#timedelta :두 날짜 사이의 간격
+# import datetime
+
+
+# today = datetime.date.today()#오늘 날짜 저장
+# td = datetime.timedelta(days=100)
+# print("우리가 만난지 100일은", today +td)#오늘부터 100일 후 
+
+# import byme
+# byme.sign()
