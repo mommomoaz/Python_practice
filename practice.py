@@ -1,4 +1,4 @@
-#퀴즈- 랜덤라이브러리를 사용해서 날짜정하기 
+# 퀴즈- 랜덤라이브러리를 사용해서 날짜정하기 
 # from random import*
 # date=randint(4,28)
 # print("오프라인 스터디 모임 날짜는 매월"+str(date)+"일로 선정되었습니다.")
@@ -104,7 +104,7 @@
 # menu={"아아","아포카토","바닐라아이스크림"}
 # print(menu,type(menu))
 
-#분기
+# 분기
 # weather=input("오늘 날씨는어때요?")
 # if weather=="비"or weather=="눈":
 #       print("우산을 챙기세요")
@@ -118,7 +118,7 @@
 # elif 10<=temp and temp <30:
 #     print("시원해용")
 
-#for
+# for
 # print("대기번호:1")
 # print("대기번호:2")
 # print("대기번호:3")
@@ -152,7 +152,7 @@
 #          continue
 #     print("{0}, 책을 읽어봐".format(student))
 
-#출석번호가 1,2,3,4, 앞에 100을 붙이기로 ->101,102,103,104
+# 출석번호가 1,2,3,4, 앞에 100을 붙이기로 ->101,102,103,104
 # students=[1,2,3,4,5]
 # print(students)
 # students=[i+100 for i in students]
@@ -163,7 +163,7 @@
 # students = [i.upper()for i in students]
 # print(students)
 
-#퀴즈
+# 퀴즈
 # from random import *
 # cnt = 0 
 # for i in range(1,51):
@@ -182,7 +182,7 @@
 #     print("입금이 완료되었습니다. 잔액은 {0}원입니다.".format(balance+money))
 #     return balance + money
 
-#기본값
+# 기본값
 
 # def profile(name, age, main_lang):
 #     print("이름:{0}\t나이:{1}\주 사용언어:{2}"\
@@ -191,17 +191,17 @@
 # profile("서혜빈",24,"파이썬")
 # profile("김한영",26,"씨언어")
 
-#키워드값
+# 키워드값
 # def profile(name,age,main_lang):
 #     print(name,age,main_lang)
 
 # profile(name="유재석"main_lang="파이썬"age=20)
 
-#가변인자 *language> 내가 출력하고 싶은 만큼 할 수 있음. 
-#서로 다른 갯수를 나타내고 싶을때
+# 가변인자 *language> 내가 출력하고 싶은 만큼 할 수 있음. 
+# 서로 다른 갯수를 나타내고 싶을때
 
-#지역변수와 전역변수 
-#지역변수- 함수 호출이 될때 만들어졌다가 끝나면 없어지는 것
+# 지역변수와 전역변수 
+# 지역변수- 함수 호출이 될때 만들어졌다가 끝나면 없어지는 것
 
 # gun= 10
 
@@ -226,7 +226,7 @@
 #     print("대기번호 : "+ str(num).zfill(3))
 
 # print("{0: >+10}".format(500))
-#3자리 마다 콤마를 찍어주기, 부호도 붙이고, 자릿수 확보하기, 돈이 많으면 좋으니까 빈 자리는 ^로 채워주기
+# 3자리 마다 콤마를 찍어주기, 부호도 붙이고, 자릿수 확보하기, 돈이 많으면 좋으니까 빈 자리는 ^로 채워주기
 # print("{0:^<+30,}".format(100000000000000))
 # #소수점 출력
 # print("{0:.7f}".format(5/4))
@@ -239,9 +239,9 @@
 # score_file = open("score.txt","r",encoding="utf8")
 # print(score_file.read())
 # score_file.close()
-#파일이 출력이 됨
+# 파일이 출력이 됨
 
-#pickle
+# pickle
 # import pickle
 # profile_file =open("profile.pickle","wb")
 # profile = {"이름":"박명수", "나이":30, "취미":["축구", "골프", "십자수"]}
@@ -259,12 +259,12 @@
 #     print("{0}/{1}={2}".format(num1,num2,int(num1/num2)))
 # except ValueError:
 #     print("에러! 잘못된 값을 입력하엿습니다.")
-    #혹은 bignumber error 등으로 사용자가 정의하는 error안내 문구를 통해
-    #무엇을 잘못 해서 오류가 나왔는지 알 수 있음. 
+#     혹은 bignumber error 등으로 사용자가 정의하는 error안내 문구를 통해
+#     무엇을 잘못 해서 오류가 나왔는지 알 수 있음. 
 
-    #모듈
-    # 자동차가 고장이 났을때 범퍼만 파손이 났다> 부품만 교체하거나 수리
-    #일반가격
+#     모듈
+#     자동차가 고장이 났을때 범퍼만 파손이 났다> 부품만 교체하거나 수리
+#     일반가격
 # def price(people):
 #     print "{0}명 가격은 {1}원 입니다.".format(people,people*10000)
 # import travel.thailand
@@ -274,21 +274,22 @@
 # from travel.thailand import Thailandpackage
 # trip_to = Thailandpackage()
 # trip_to.detail()
-#input : 사용자 입력을 받는 함수
+# input : 사용자 입력을 받는 함수
 # language = input("무슨 연어를 좋아하세요?")
 # print("{0}은 아주 좋은 연어입니다!".format(language))
-#dir : 어떤 객체를 넘겨줬을 때 그 객체가 어떤 변수와 함수를 가지고 있는지 표시
+# dir : 어떤 객체를 넘겨줬을 때 그 객체가 어떤 변수와 함수를 가지고 있는지 표시
 # print(dir())
 # import random
 # print(dir())
 # import pickle
 # print(dir())
+#changes.
 
 # print(dir(random))
-#파이썬 함수 한국어 라고 하면 바로 함수를 가져와서 쓸 수 있음
-#list of phython modules
+# 파이썬 함수 한국어 라고 하면 바로 함수를 가져와서 쓸 수 있음
+# list of phython modules
 
-#os : 운영 체제에서 제공하는 기본기능
+# os : 운영 체제에서 제공하는 기본기능
 # import os
 # print(os.getcwd()) #현재 디렉토리
 
@@ -303,7 +304,7 @@
 # import datetime
 # print("오늘 날짜는" , datetime.date.today())
 
-#timedelta :두 날짜 사이의 간격
+# timedelta :두 날짜 사이의 간격
 # import datetime
 
 
